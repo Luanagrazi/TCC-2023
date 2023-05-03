@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+/* Propriedades que se aplicam a todos os elementos da página. */
+* {
+	/* Remove a margem externa de todos os lados do elemento. */
+	margin: 0;
+
+	/* Remove o espaçamento interno de todos os lados do elemento. */
+	padding: 0;
+
+	/* Inclui o preenchimento e a borda na largura e altura. */
+	box-sizing: border-box;
+}
+h2{
+	color: rgb(37, 215, 20);
+	
+	text-align: center;
+}
+
+#texto-maquina{
+	color: rgb(37, 215, 20);
+	margin-top: 25px;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+h3{
+	color: rgb(86, 17, 147);
+	
+	text-align: center;
+}
+
+body {
+	/* Exibição flexível.                          */
+	/* Torna o elemento um flex container          */
+	/* e os seus elementos internos em flex-itens. */
+	display: flex;
+    font-family:'Times New Roman', Times, serif;
+	/* Quebra de linha quando os itens não couberem na largura da tela. */
+	flex-wrap: wrap;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 100vw;
+background-color: rgb(255, 255, 255);
+	/* Margem de todos os lados. */
+	margin: 1px;
+  
+	
+}
+
+/* Formatação comum entre os elementos.  background-color: #fffffff4;*/
+header, nav, main, aside, footer {
+	/* Cor do fundo. */
+
+	background-color: #e5e3e7ce;
+
+	/* Exibição flexível.                          */
+	/* Torna o elemento um flex container          */
+	/* e os seus elementos internos em flex-itens. */
+	display: flex;
+
+	/* Margem externa de todos os lados. */
+	margin: 7px;
+}
+
+.img-responsive {
+	max-width: 50%;
+	height: 30%;
+
+	
+	
+  }
+
+  .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	
+
+
+
+	
+  }
+  
+  img {
+	width: 300px;
+	height: auto;
+	text-align: justify;
+	
+	padding-left: 20px;
+	padding-right: 40px;
+	padding: 10px;
+	
+
+  }
+  
+  p {
+	margin-top: 10px;
+	
+	color:rgb(255, 255, 255);
+    text-align: justify;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	 
+  }
+ 
+
+/* Seletores para formatação individual. */
+
+header {
+	/* Altura do elemento. */
+	height: 100px;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 100vw;
+	/* background-color: rgb(49, 10, 97);*/
+	background-image: linear-gradient(to bottom,#2c7127, #38e229ec, #2c7127);
+	box-shadow: 0 5px 10px rgba(72, 31, 168, 0.906);
+	
+	
+	
+
+}
+
+
+header #logo {
+	/* Exibição flexível.                          */
+	/* Torna o elemento um flex container          */
+	/* e os seus elementos internos em flex-itens. */
+	display: flex;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 0 1 308px;
+
+	/* Cor do fundo. */
+    background: url(https://intronsmetidos.github.io/projetointronsmetidos/ProjetoIntegrador/Imagens/logo-ifrn.png);
+	/*background: url(data:image/png;base64,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);
+	
+
+	/* Alinha os itens na vertical. */
+	justify-content: center;
+
+	/* Alinha os itens na horizontal. */
+	align-items: center;
+}
+
+
+
+#openMenu, #closeMenu {
+	/* Remove a borda. */
+	border: none;
+
+	/* Remove a cor de fundo. */
+	background: none;
+
+	/* Tamanho da fonte. */
+	font-size: 30px;
+
+	/* Espessura da forte. */
+	font-weight: bold;
+
+	/* Margem ao redor do elemento              */
+	/* (superior, direito, inferior e esquerdo) */
+	padding: 0px 5px 0px 5px;
+
+	/* Muda o cursor do mouse para ponteiro.*/
+	cursor: pointer;
+
+	/* Oculta o elemento. */
+	display: none;
+}
+
+
+
+nav {
+	/* Alinha os itens na vertical. */
+	justify-content: center;
+
+	/* Alinha os itens na horizontal. */
+	align-items: center;
+
+	/* Dispõe os itens em coluna. */
+	flex-direction: column;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 300px;
+}
+
+nav a {
+	/* Margem de todos os lados. */
+	margin: 7%;
+
+	/* Tamanho da fonte. */
+	font-size: 10pt;
+}
+
+main {
+	/* Realizar a subtração de 100% da altura vertical menos a soma    */
+	/* da altura dos elementos ( 400px ) com as suas margens ( 36px ). */
+	height: calc(800vh - 10px);
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 20 1 800px;
+	box-shadow: 0 5px 10px rgba(62, 15, 161, 0.906);
+	background-image: linear-gradient(to bottom,#1e103e, #9570c9, #8c60c9, #a288c6, rgb(114, 94, 142), #1e103e );
+}    
+
+aside {
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 300px;
+	background-color: rgb(95, 176, 25);
+	box-shadow: 0 5px 10px rgba(72, 31, 168, 0.906);
+
+}
+
+footer {
+	/* Altura do elemento. */
+	height: 100px;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 100vw;
+	background: #16970ae8;
+}
+
+a {
+	/* Remove a decoração padrão do elemento. */
+	text-decoration: none;
+
+	/* Definir a cor da fonte para o padrão do elemento pai. */
+	color: inherit;
+}
+
+@media only screen and (max-width: 923px) {
+	main {
+		/* Realizar a subtração de 100% da altura vertical menos a soma    */
+		/* da altura dos elementos ( 300px ) com as suas margens ( 30px ). */
+		height: calc(500vh - 330px);
+	}
+
+	aside {
+		/* Altura do elemento. */
+		height: 500px;
+		
+		
+	}
+}
+#menu{
+ 	
+	background-image: linear-gradient(to bottom,#d9e0d8, #f6f6ed, #f6f6f6);
+	
+	
+   /* background: #350469;*/
+   
+}
+
+
+/* Altera o estilo dos elementos para serem apresentados */ 
+/* em telas menores que 717px. */
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		/* Retorna a visibilidade padrão. */
+		display: block;
+	}
+
+	#openMenu {
+		/* Espaço a esquerda será preenchido automaticamente
+		   colocando os itens a direita. */
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe o elemento a 15px da esquerda. */
+		right: 15px;
+
+		/* Dispõe o elemento a 15px do topo. */
+		top: 15px;
+	}
+
+	nav {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 60vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		
+		background: rgba(255, 255, 255, 0.8);
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Alinha os itens na vertical. */
+		justify-content: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin: 0;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+	}
+}
+
+
+/* termos de uso */
+
+.modal {
+	display: none; /* esconder a janela até ser aberta */
+	position: fixed; /* janela fixa na tela */
+	z-index: 1; /* colocar a janela na frente dos outros elementos */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* permitir rolagem */
+	background-color: rgba(0,0,0,0.4); /* fundo escuro semi-transparente */
+  }
+  
+  .modal-content {
+	background-color: white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+
+
+
+
