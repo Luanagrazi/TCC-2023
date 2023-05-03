@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentoquestão3</title>
+
+    <script> 
+    var votos, CeciliaMeireles = 0, ArianoSuassuna = 0, MachadoAssis = 0, GracilianoRamos = 0, Brancos = 0, Nulos = 0;
+
+        do {
+          votos = parseInt(prompt("informe o número do candidato (11, 33, 44 ou 99), 1234 para encerrar a votação, 0 para votar em branco, ou qualquer outro valor para nulo"));
+          
+          switch (votos) {
+            case 11:
+              CeciliaMeireles++;
+              break;
+            case 33:
+              ArianoSuassuna++;
+              break;
+            case 44:
+             MachadoAssis++;
+              break;
+            case 99:
+            GracilianoRamos++;
+              break;
+            case 0:
+              Brancos++;
+              break;
+            case 1234:
+              break;
+            default:
+              Nulos++;
+              break;
+          }
+        } while (votos !== 1234);
+        
+        alert("votos para Cecília Meireles: " + CeciliaMeireles);
+        alert("votos para Ariano Suassuna: " + ArianoSuassuna);
+        alert("votos para Machado de Assis: " + MachadoAssis);
+        alert("votos para Graciliano Ramos: " + GracilianoRamos);
+        alert("votos em branco: " + Brancos);
+        alert(" votos nulos: " + Nulos);
+        
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

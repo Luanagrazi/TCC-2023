@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentoquestão4</title>
+
+    <script>
+var qnt = prompt("qual a quantidade de números?");
+var numeros = prompt("digite o 1° número, por favor");
+var big = numeros;
+
+for(var i = 2; i <= qnt; i++) {
+    numeros = prompt("digite o " + i + "° número:"  );
+
+    if(numeros > big) {
+        big = numeros;
+    }
+}
+
+alert("O maior número entre os digitados foi o: " + big);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
